@@ -1,0 +1,25 @@
+
+
+
+
+<div>
+    <div class="user-image" *ngIf="user != null || user != undefined ">
+        
+        <img src={{user.avatar_url}} alt="..." class="rounded-circle "> 
+        <p><dt>{{user.login}}</dt></p>
+        <p><dt>Number of repos:{{user.public_repos}}       </dt></p>
+    </div>
+
+
+    <div class="user-repos">
+        <ul _ngcontent-ibm-c14>
+            <li *ngFor="let slide of repos "  class="cursor-pointer flex items-center py-2 text-lg border rounded mb-2">
+              <h4>{{slide.name}}</h4>
+              <h6>No of Stars:<small>{{slide.watchers_count}}     </small>   </h6>
+              <h6>Description: <small>{{slide.description}}  </small>  </h6>
+              <a  href={{slide.html_url}} target="_blank" class="btn btn-sm btn-primary">View on github</a>
+
+            </li>
+     </ul>
+  
+</div>

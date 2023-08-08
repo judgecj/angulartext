@@ -1,0 +1,23 @@
+
+.user-image{
+    width: 40%;
+    margin: auto;
+    /* background: red; */
+    text-align: center;
+}
+.user-image img{
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+.user-repos{
+    width: 90%;
+    margin: auto
+}
+.user-repos ul{
+  list-style: none;
+}
+
+.user-repos ul li{
+    padding-left: 2%;
+}

@@ -1,0 +1,31 @@
+.search-data{
+    width: 70%;
+    margin: auto;
+    margin-left: 20%;
+    margin-top: 7%;
+    margin-bottom: 1%;
+    /* background-color: red; */
+}
+.users-data{
+    width: 82%;
+    margin: auto;
+
+}
+.users-data ul{
+   list-style: none;
+}
+.user-profile a{
+ margin-top: 5%;
+}
+.user-image{
+    display: flex;
+}
+.user-image p{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.user-image img{
+    width: 7%;
+    /* background-color: red; */
+    margin-left: 1%;
+}

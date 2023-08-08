@@ -1,0 +1,40 @@
+
+
+<div class="search-data">
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <div class="row">
+        <div class="col-9"><input class="form-control"  type="text" id="fname" 
+            name="username" ngModel required #fname="ngModel" placeholder="Search username" ></div>
+        <div class="col-3">    <button class="btn btn-sm btn-primary" href="" role="button" >Search</button></div>
+      </div>
+      </form>
+
+</div>
+
+
+<div class="users-data">
+    <ul _ngcontent-ibm-c14>
+        <li *ngFor="let slide of users " class="cursor-pointer flex items-center py-2 text-lg border rounded mb-2">
+            <div class="row">
+                <div class="col-10">
+                    <div class="user-image">
+                        <img src={{slide.avatar_url}} alt="..." class="rounded-circle "> 
+                        <p><dt>{{slide.login}}</dt></p>
+                    </div>
+                   
+                </div>
+                <div class="col-2"> 
+                    <div class="user-profile">
+                        <a class="btn btn-lg btn-primary" [routerLink]="['/user/', slide.login]"  role="button">View Profile</a>
+                    </div>
+
+              </div>   
+            </div>
+        </li>
+    </ul>
+   
+</div>
+
+
+
+  
