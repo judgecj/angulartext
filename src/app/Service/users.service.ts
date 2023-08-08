@@ -28,13 +28,7 @@ export class UsersService {
     }
     
 
-    // addrequest(enterpost){
-    //     var post = enterpost;
-    //     var headers = new Headers();
-    //     headers.append('Content-Type', 'application/json');
-    //     return this.http.post('https://blogend.herokuapp.com/api/requests/new', { "name": post.name,"body": post.body, "email": post.email  });
-      
-    //    }
+  
     
 }
 
